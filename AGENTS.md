@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Editable company data lives in src/lib/site-config.ts and page content in src/lib/content.ts; why: owner replaces placeholders without touching layout.
