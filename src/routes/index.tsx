@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { Reveal, SectionTitle } from "@/components/site/Reveal";
-import { CtaBand, FAQ, Gallery, IconCard, NewsCard, ProductCard, WholesaleBanner, WhyUs } from "@/components/site/Blocks";
+import { CtaBand, FAQ, FloatingVideoButton, Gallery, IconCard, NewsCard, ProductCard, WholesaleBanner, WhyUs } from "@/components/site/Blocks";
 import { images, news, products, services } from "@/lib/content";
 import { seo } from "@/lib/seo";
 
@@ -13,6 +13,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
+      <FloatingVideoButton />
       <HeroSlider />
       <section className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
