@@ -13,6 +13,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
+      <FloatingVideoButton />
       <HeroSlider />
       <section className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
