@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Play } from "lucide-react";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { Reveal, SectionTitle } from "@/components/site/Reveal";
 import { CtaBand, FAQ, Gallery, IconCard, NewsCard, ProductCard, WholesaleBanner, WhyUs } from "@/components/site/Blocks";
