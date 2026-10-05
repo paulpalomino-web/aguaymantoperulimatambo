@@ -207,7 +207,6 @@ export function CtaBand() {
           <Link to="/contacto" className="btn btn-gold">Solicitar cotización</Link>
           <Link to="/productos" className="btn btn-ghost-light">Consultar productos</Link>
         </div>
-        <VideoModal />
       </Reveal>
     </section>
   );
