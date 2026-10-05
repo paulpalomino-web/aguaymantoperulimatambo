@@ -155,7 +155,7 @@ export function VideoModal() {
 
   return (
     <>
-      <button onClick={() => setOpen(true)} className="btn btn-outline-light inline-flex items-center gap-2">
+      <button onClick={() => setOpen(true)} className="btn btn-ghost-light inline-flex items-center gap-2">
         <Play className="h-4 w-4" /> Ver video
       </button>
       {open && (
