@@ -137,6 +137,45 @@ export function FAQ() {
   );
 }
 
+const youtubeVideoId = "KquI_AS5ChY";
+
+export function VideoModal() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  return (
+    <>
+      <button onClick={() => setOpen(true)} className="btn btn-outline-light inline-flex items-center gap-2">
+        <Play className="h-4 w-4" /> Ver video
+      </button>
+      {open && (
+        <div role="dialog" aria-modal="true" aria-label="Video sobre el aguaymanto" className="fixed inset-0 z-[60] flex items-center justify-center bg-overlay/95 p-4 md:p-10" onClick={() => setOpen(false)}>
+          <button aria-label="Cerrar video" className="absolute right-5 top-5 rounded-full bg-on-dark/15 p-2 text-on-dark transition-colors hover:bg-on-dark/25" onClick={() => setOpen(false)}><X /></button>
+          <div className="aspect-video w-full max-w-5xl overflow-hidden rounded-2xl shadow-lift" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}?autoplay=1&rel=0`}
+              title="Video sobre el aguaymanto"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="h-full w-full"
+            />
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 export function CtaBand() {
   return (
     <section className="py-20">
@@ -147,6 +186,7 @@ export function CtaBand() {
           <Link to="/contacto" className="btn btn-gold">Solicitar cotización</Link>
           <Link to="/productos" className="btn btn-ghost-light">Consultar productos</Link>
         </div>
+        <VideoModal />
       </Reveal>
     </section>
   );
