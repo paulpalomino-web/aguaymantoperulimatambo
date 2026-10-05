@@ -27,6 +27,11 @@ function Index() {
             <SectionTitle eyebrow="Sobre nosotros" title="Comprometidos con la calidad del aguaymanto peruano"
               text="Somos una empresa dedicada a la producción y comercialización de aguaymanto, comprometida con ofrecer productos de calidad y construir relaciones comerciales duraderas con nuestros clientes." />
             <Reveal><Link to="/quienes-somos" className="btn btn-forest mt-8">Conoce quiénes somos</Link></Reveal>
+            <Reveal delay={150} className="mt-3">
+              <VideoButton className="btn btn-outline">
+                <Play className="h-4 w-4" /> Ver video sobre el aguaymanto
+              </VideoButton>
+            </Reveal>
           </div>
         </div>
       </section>
