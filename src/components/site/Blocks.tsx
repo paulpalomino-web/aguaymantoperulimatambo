@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { ArrowRight, Check, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight, Check, Play, X } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { faqs, formatDate, gallery, type Item, type News, type Product, whyUs } from "@/lib/content";
 import { Reveal, SectionTitle } from "./Reveal";
