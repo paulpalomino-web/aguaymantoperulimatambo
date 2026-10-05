@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HeroSlider } from "@/components/site/HeroSlider";
 import { Reveal, SectionTitle } from "@/components/site/Reveal";
-import { CtaBand, FAQ, Gallery, IconCard, NewsCard, ProductCard, WholesaleBanner, WhyUs } from "@/components/site/Blocks";
+import { CtaBand, FAQ, FloatingVideoButton, Gallery, IconCard, NewsCard, ProductCard, WholesaleBanner, WhyUs } from "@/components/site/Blocks";
 import { images, news, products, services } from "@/lib/content";
 import { seo } from "@/lib/seo";
 
