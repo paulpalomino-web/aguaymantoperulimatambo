@@ -1,6 +1,6 @@
 // Datos editables de la empresa. Reemplaza los valores entre corchetes.
 export const site = {
-  name: "[NOMBRE DE LA EMPRESA]",
+  name: "AGUAYMANTO PERÚ LIMATAMBO",
   brand: "AGUAYMANTO PERÚ",
   tagline: "Calidad y compromiso desde el campo peruano.",
   phone: "+51 978348772",
