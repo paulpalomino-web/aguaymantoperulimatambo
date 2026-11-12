@@ -3,12 +3,12 @@ export const site = {
   name: "[NOMBRE DE LA EMPRESA]",
   brand: "AGUAYMANTO PERÚ",
   tagline: "Calidad y compromiso desde el campo peruano.",
-  phone: "[TELÉFONO]",
-  whatsapp: "51900000000", // [WHATSAPP] solo dígitos con código de país
-  whatsappDisplay: "[WHATSAPP]",
-  email: "[CORREO]",
-  address: "[DIRECCIÓN]",
-  city: "[CIUDAD]",
+  phone: "+51 978348772",
+  whatsapp: "51978348772",
+  whatsappDisplay: "+51 978348772",
+  email: "paul@aguaymantoperulimatambo.gmail.com",
+  address: "comunidad ccoyor - limatambo - anta -cusco",
+  city: "",
   hours: "[HORARIO]",
   whatsappMessage:
     "Hola, estoy interesado en sus productos de aguaymanto y quisiera recibir información.",

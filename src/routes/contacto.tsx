@@ -20,7 +20,7 @@ function Contact() {
     { icon: MessageCircle, label: "WhatsApp", value: site.whatsappDisplay, href: whatsappUrl() },
     { icon: Phone, label: "Teléfono", value: site.phone },
     { icon: Mail, label: "Correo electrónico", value: site.email },
-    { icon: MapPin, label: "Dirección", value: `${site.address}, ${site.city}` },
+    { icon: MapPin, label: "Dirección", value: site.address },
     { icon: Clock, label: "Horario de atención", value: site.hours },
   ];
   return (
