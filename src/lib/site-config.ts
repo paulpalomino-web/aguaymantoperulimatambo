@@ -9,7 +9,7 @@ export const site = {
   email: "paul@aguaymantoperulimatambo.gmail.com",
   address: "comunidad ccoyor - limatambo - anta -cusco",
   city: "",
-  hours: "[HORARIO]",
+  hours: "Lunes a viernes",
   whatsappMessage:
     "Hola, estoy interesado en sus productos de aguaymanto y quisiera recibir información.",
   social: {
