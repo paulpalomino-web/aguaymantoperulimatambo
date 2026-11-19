@@ -30,7 +30,7 @@ function About() {
 
       <section id="historia" className="bg-cream py-24">
         <div className="mx-auto max-w-7xl px-5">
-          <SectionTitle eyebrow="Nuestra historia" title="Un camino que seguimos construyendo" />
+          <SectionTitle eyebrow="Nuestra historia" title="Un camino que construimos con pasión y visión de futuro." />
           <ol className="relative mt-14 grid gap-8 md:grid-cols-4">
             <div aria-hidden className="absolute left-0 right-0 top-7 hidden h-px bg-gold/50 md:block" />
             {institutional.history.map((h, i) => (
