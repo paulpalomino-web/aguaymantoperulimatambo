@@ -26,7 +26,7 @@ function Products() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <Reveal><img src={images.fruit} alt="Detalle de aguaymanto seleccionado" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lift" /></Reveal>
           <div>
-            <SectionTitle eyebrow="Calidad que se nota" title="" />
+            <SectionTitle eyebrow="Calidad que se nota" title="Cuidamos cada fruto para ofrecerte lo mejor de nuestra tierra" />
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {quality.map((q, i) => (
                 <Reveal key={q} delay={i * 60}><li className="flex items-center gap-3 rounded-xl bg-card px-4 py-3 font-semibold text-forest shadow-soft"><CheckCircle2 className="h-5 w-5 text-gold" />{q}</li></Reveal>
