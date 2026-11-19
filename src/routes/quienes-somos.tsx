@@ -18,7 +18,7 @@ function About() {
       <section id="empresa" className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <div>
-            <SectionTitle eyebrow="Nuestra empresa" title="Producimos y comercializamos aguaymanto peruano" />
+            <SectionTitle eyebrow="Nuestra empresa exitosa" title="Producimos y comercializamos aguaymanto de limatambo" />
             <Reveal className="mt-6 space-y-4 text-lg text-muted-foreground">
               <p>Somos una empresa peruana dedicada a la producción, comercialización y venta de aguaymanto.</p>
               <p>Atendemos a clientes particulares, restaurantes, tiendas, distribuidores y compradores mayoristas, con un compromiso firme con la calidad del producto y la atención personalizada.</p>
