@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { nav, site, whatsappUrl } from "@/lib/site-config";
 import { Logo } from "./Logo";
 
@@ -20,10 +21,11 @@ export function Footer() {
         <div>
           <h3 className="font-sans text-sm font-bold uppercase tracking-widest text-gold-soft">Información</h3>
           <ul className="mt-4 space-y-2 text-sm text-on-dark/80">
-            <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-gold-soft">WhatsApp: {site.whatsappDisplay}</a></li>
-            <li>Teléfono: {site.phone}</li>
-            <li>Correo: {site.email}</li>
-            <li>Dirección: {site.address}</li>
+            <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-gold-soft"><MessageCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" /><span>WhatsApp: {site.whatsappDisplay}</span></a></li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" /><span>Teléfono: {site.phone}</span></li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" /><span>Correo: {site.email}</span></li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" /><span>Dirección: {site.address}</span></li>
+            <li className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" /><span>Horario: {site.hours}</span></li>
           </ul>
         </div>
         <div>
